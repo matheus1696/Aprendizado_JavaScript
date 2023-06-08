@@ -4,13 +4,7 @@ body{
     font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;    
     margin: 0;
     padding: 0;
-}
-
-div{
-    overflow: hidden;
-    margin: 0;
-    padding: 0;
-
+    overflow-x: hidden;
 }
 
 h1{
@@ -24,41 +18,37 @@ h2{
 
 ul{
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     list-style: none;
-}
-
-li{
-    background-color: rgb(223, 223, 16);
-    padding: 5px 10px;
-    margin: 5px 10px;
-    box-shadow: 2px 2px 5px gray;
-    border-radius: 4px;    
-    flex-direction: column;
-    text-align: center;
-    width: 200px;
-}
-
-li:hover{
-    background-color: rgb(255, 255, 2);
-    transition-duration: 500ms;
-    
 }
 
 a{
     text-decoration: none;
-    color: black;
+    color: black;    
+    background-color: rgb(223, 223, 16);
+    box-shadow: 2px 2px 5px gray;
+    border-radius: 4px;    
+    text-align: center;
+    margin: 10px;
+    padding: 5px 10px;
 }
 
-@media (max-width: 800px) {
+a:hover{
+    background-color: rgb(255, 255, 2);
+    transition-duration: 500ms;    
+}
+
+p{
+    text-align: center;
+}
+
+@media (max-width: 600px) {
     ul{
-        display: flex;
         flex-direction: column;
     }
-
     li{
-        width: 50%;
+        margin: 15px;
     }
-  }
+}
