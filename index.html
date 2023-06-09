@@ -7,13 +7,13 @@
     <title>Hospedagem</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="w-screen h-screen">
+<body class="w-screen h-screen overflow-x-hidden">
 
     <header class="w-full px-16 border-b border-gray-100">
 
         <div class="h-20 flex items-center justify-between">
             <!-- Logo -->
-            <div class="flex-2">
+            <div>
                 <img src="https://revistacipa.com.br/wp-content/uploads/2021/04/logo-social.png" alt="logo" width="129">
             </div>
 
@@ -24,10 +24,10 @@
                 </div>
                 <div class="invisible lg:visible">
                     <ul class="flex space-x-4 text-sm">
-                        <li><a href="" class="hover:bg-blue-500 duration-500 hover:text-white hover:shadow-lg rounded-sm py-2 px-4">Reservar</a></li>
-                        <li><a href="" class="hover:bg-blue-500 duration-500 hover:text-white hover:shadow-lg rounded-sm py-2 px-4">Sobre Nós</a></li>
-                        <li><a href="" class="hover:bg-blue-500 duration-500 hover:text-white hover:shadow-lg rounded-sm py-2 px-4">Informações</a></li>
-                        <li><a href="" class="hover:bg-blue-500 duration-500 hover:text-white hover:shadow-lg rounded-sm py-2 px-4">Contato</a></li>
+                        <li><a href="" class="hover:bg-sky-500 duration-500 hover:text-white hover:shadow-md rounded-sm py-2 px-4">Reservar</a></li>
+                        <li><a href="" class="hover:bg-sky-500 duration-500 hover:text-white hover:shadow-md rounded-sm py-2 px-4">Sobre Nós</a></li>
+                        <li><a href="" class="hover:bg-sky-500 duration-500 hover:text-white hover:shadow-md rounded-sm py-2 px-4">Informações</a></li>
+                        <li><a href="" class="hover:bg-sky-500 duration-500 hover:text-white hover:shadow-md rounded-sm py-2 px-4">Contato</a></li>
                     </ul>
                 </div>
             </div>
@@ -37,32 +37,56 @@
 
     <main>
         <!-- Banner -->
-        <section class="bg-no-repeat bg-cover bg-bottom" style="background-image: url(/tailwind/projetos/hospedagem/banner.jpg); height: 400px;">
-            <div class="flex items-center justify-center h-full w-full backdrop-brightness-50">
-                <div class="space-y-8">
-                    <div class="space-y-1">
-                        <h1 class="text-center text-4xl text-white font-700">Onde você quer ir?</h1>
-                        <p class="text-center text-md text-white">Escolha o estado e cidade para achar os melhores resorts</p>
+        <section class="bg-no-repeat bg-cover bg-bottom" style="background-image: url(https://www.milebrindes.com.br/content/interfaces/cms/userfiles/produtos/banner-cadeira-de-praia-142.jpg); height: 400px;">
+            <div class="flex flex-row items-center justify-center h-full w-full backdrop-brightness-50">
+                <div class="space-y-6">
+                    <div class="space-y-2">
+                        <p class="text-center text-4xl text-white font-700">Onde você quer ir?</p>
+                        <p class="text-center text-sm md:text-md text-white">Escolha o estado e cidade para achar os melhores resorts</p>
                     </div>
 
-                    <div class="space-x-3">
-                        <select name="" id="" class="py-2 px-3 rounded-sm text-sm text-gray-600">
+                    <div class="flex flex-col lg:flex-row items-center">
+                        <select name="" id="" class="py-2 px-3 rounded-sm text-sm text-gray-600 w-60 m-3">
                             <option selected disabled>Escolha o estado</option>
                             <option>Pernambuco</option>
                         </select>
-                        <select name="" id="" class="py-2 px-3 rounded-sm text-sm text-gray-600">
+                        <select name="" id="" class="py-2 px-3 rounded-sm text-sm text-gray-600 w-60 m-3">
                             <option selected disabled>Escolha a cidade</option>
                             <option>Caruaru</option>
                         </select>
-                        <button class="py-2 px-3 rounded-sm text-white text-sm bg-blue-600 hover:bg-blue-500 duration-500">Pesquisar resorts</button>
+                        <button class="inline-flex items-center justify-center py-2 rounded-sm text-white text-sm bg-sky-500 hover:bg-sky-700 duration-200 w-60 lg:w-48 m-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 mr-2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+                            </svg>                              
+                            Pesquisar resorts
+                        </button>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Sobre -->
+        <!-- Resorts -->
         <section>
-
+            <div class="flex flex-col lg:flex-row justify-center m-14">
+                <div class="space-y-3 px-6 py-10">
+                    <p class="font-bold text-gray-700 text-sm">RESORT EM DESTAQUE</p>
+                    <P class="font-700 text-3xl text-gray-600">Ecoresort Praia do Forte Bahia</P>
+                    <p class="font-800 text-sm text-gray-400 pt-0">Hotel qualidade 5 estrelas</p>
+                    <div class="space-y-4 py-3">
+                        <p>Nulla facilisi. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Vivamus vulputate ligula at mauris ultricies porta. Etiam risus leo, semper nec placerat rhoncus, rhoncus ac massa.</p>
+                        <p>Etiam odio velit, sodales sit amet metus at, vehicula sodales sem. Curabitur feugiat eros libero, vitae efficitur sem ornare ut. Nunc sit amet lacinia sapien.</p>
+                    </div>
+                    <button class="flex items-center justify-between w-48 text-white bg-cyan-500 hover:bg-cyan-700 py-2 px-4 rounded-sm duration-500">
+                        Solicitar reserva
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="p-6 invisible md:visible">
+                    <img src="https://www.melhoresdestinos.com.br/wp-content/uploads/2021/04/resort-salinas-maragogi-capa-05.jpg" alt="" class="hover:brightness-50 duration-500">
+                </div>
+            </div>
         </section>
 
     </main>
